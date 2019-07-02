@@ -17,17 +17,25 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.farmers.gov/')
 
-WebUI.setText(findTestObject('Object Repository/TestingSearchBox/input_Search Farmersgov_query'), 'soil')
+WebUI.setText(findTestObject('TestingSearchBox/input_Search Farmersgov_query'), 'soil')
 
-WebUI.click(findTestObject('Object Repository/TestingSearchBox/button_Search'))
+WebUI.click(findTestObject('TestingSearchBox/button_Search'))
 
-WebUI.click(findTestObject('Object Repository/TestingSearchBox/a_Soil Health  Farmers'))
+WebUI.click(findTestObject('TestingSearchBox/a_Soil Health  Farmers'))
 
-WebUI.click(findTestObject('Object Repository/TestingSearchBox/h1_Soil Health'))
+WebUI.click(findTestObject('TestingSearchBox/h1_Soil Health'))
 
-WebUI.click(findTestObject('Object Repository/TestingSearchBox/h1_Soil Health'))
+WebUI.click(findTestObject('TestingSearchBox/h1_Soil Health'))
 
-WebUI.click(findTestObject('Object Repository/TestingSearchBox/img'))
+WebUI.click(findTestObject('TestingSearchBox/img'))
+
+WebUI.closeBrowser()
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.farmers.gov/')
+
+WebUI.click(findTestObject('Object Repository/span_Recover'))
 
 WebUI.closeBrowser()
 
